@@ -74,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function displayQuiz() {
+        console.log(Quizes[counter]);
         quizCounter.innerText = `${counter + 1} of ${Quizes.length}`
-        Quiz.innerText = Quizes[counter].Question;
+        Quiz.innerHTML = Quizes[counter].Question;
         // Clear previous answer buttons
         answersElement.innerHTML = '';
 
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let button = document.createElement('button');
             button.className = 'Answer';
             button.id = `Answer${index}`;
-            button.textContent = answer;
+            button.innerHTML = answer;
             button.addEventListener('click', function () {
                 checkAnswer(button);
             });
