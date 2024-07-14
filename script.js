@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function displayQuiz() {
-        console.log(Quizes[counter]);
         quizCounter.innerText = `${counter + 1} of ${Quizes.length}`
         Quiz.innerHTML = Quizes[counter].Question;
         // Clear previous answer buttons
