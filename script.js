@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const savedType = localStorage.getItem('type');
                 if (savedType) {
                     types.value = savedType;
-                    fetchQuize();
                 }
+                fetchQuize();
 
                 // After populating options, add event listener for change
                 types.addEventListener('change', function () {
