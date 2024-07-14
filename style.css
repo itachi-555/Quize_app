@@ -65,7 +65,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-.next {
+.next,.play-again {
   border: none;
   border-radius: 5px;
   background-color: black;
@@ -74,8 +74,11 @@ footer {
   padding: 10px 30px;
   cursor: pointer;
 }
-.next:disabled {
+.next:disabled{
   color: #a8a8a8;
+}
+.play-again{
+  display: none;
 }
 @media (max-width:700px) {
     .container{

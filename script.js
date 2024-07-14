@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const answersElement = document.getElementById('Answers');
     const types = document.getElementById('types');
     const type = document.getElementById('type');
+    const playAgain = document.getElementById('play-again');
     const amount = 10;
     let Quizes = []; // Initialize Quizes array to store quiz objects
     let counter = 0;
@@ -127,7 +128,14 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let index = 0; index < 4; index++) {
             document.getElementById(`Answer${index}`).disabled = true;
         }
+        if (counter + 1 == Quizes.length) {
+            nextButton.style.display = 'none';
+            playAgain.style.display = 'block';
+        }
     }
+    playAgain.addEventListener('click', () => {
+        location.reload();
+    })
 
     fetchCategories();
 });
