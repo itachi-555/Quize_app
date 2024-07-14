@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const answersElement = document.getElementById('Answers');
     const types = document.getElementById('types');
     const type = document.getElementById('type');
+    const amount = 10;
     let Quizes = []; // Initialize Quizes array to store quiz objects
     let counter = 0;
     let answered = false;
-
+    let correctAnswerButton;
     function fetchCategories() {
         fetch('https://opentdb.com/api_category.php')
             .then(response => response.json())
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if types.options[types.selectedIndex] is defined
         if (types.selectedIndex !== -1) {
             type.innerText = types.options[types.selectedIndex].textContent;
-            fetch(`https://opentdb.com/api.php?amount=5&category=${types.value}&difficulty=easy&type=multiple`)
+            fetch(`https://opentdb.com/api.php?amount=${amount}&category=${types.value}&difficulty=easy&type=multiple`)
                 .then(response => response.json())
                 .then(data => {
                     Quizes = []; // Clear Quizes array before fetching new data
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                     counter = 0; // Reset counter when fetching new quiz data
                     displayQuiz(); // Display the first quiz question and answers
+                    console.log(Quizes);
                 })
                 .catch(error => console.error('Error:', error));
         }
@@ -87,6 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 checkAnswer(button);
             });
             answersElement.appendChild(button);
+            if (answer == Quizes[counter].correctAnswer) {
+                correctAnswerButton = button;
+            }
         });
 
         // Enable next button only if an answer has been clicked
@@ -110,15 +115,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     function checkAnswer(button) {
         let selectedAnswer = button.textContent;
-        let correctAnswer = Quizes[counter].correctAnswer;
-        if (selectedAnswer === correctAnswer) {
-            button.style.backgroundColor = 'green';
-            button.style.color = 'white';
-        } else {
+        console.log(correctAnswerButton);
+        console.log(button);
+        correctAnswerButton.style.backgroundColor = 'green';
+        correctAnswerButton.style.color = 'white';
+        if (correctAnswerButton != button) {
             button.style.backgroundColor = 'red';
             button.style.color = 'white';
         }
-
         answered = true;
         if (counter + 1 < Quizes.length) {
             nextButton.disabled = false;
