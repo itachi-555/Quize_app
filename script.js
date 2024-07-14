@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                     counter = 0; // Reset counter when fetching new quiz data
                     displayQuiz(); // Display the first quiz question and answers
-                    console.log(Quizes);
                 })
                 .catch(error => console.error('Error:', error));
         }
@@ -115,8 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     function checkAnswer(button) {
         let selectedAnswer = button.textContent;
-        console.log(correctAnswerButton);
-        console.log(button);
         correctAnswerButton.style.backgroundColor = 'green';
         correctAnswerButton.style.color = 'white';
         if (correctAnswerButton != button) {
