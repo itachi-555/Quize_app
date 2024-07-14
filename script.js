@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let counter = 0;
     let answered = false;
     let correctAnswerButton;
+
     function fetchCategories() {
         fetch('https://opentdb.com/api_category.php')
             .then(response => response.json())
@@ -24,16 +25,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     types.appendChild(option);
                 });
 
+                // Retrieve and set the selected type after options are populated
+                const savedType = localStorage.getItem('type');
+                if (savedType) {
+                    types.value = savedType;
+                    fetchQuize();
+                }
+
                 // After populating options, add event listener for change
                 types.addEventListener('change', function () {
+                    localStorage.setItem('type', types.value);
                     fetchQuize();
                 });
-
-                // Call fetchQuize() initially after options are populated
-                fetchQuize();
             })
             .catch(error => console.error('Error fetching categories:', error));
     }
+
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -107,12 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             displayQuiz();
         }
     }
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            nextButton.click();
-            console.log('button is disabled');
-        }
-    });
+
     function checkAnswer(button) {
         let selectedAnswer = button.textContent;
         correctAnswerButton.style.backgroundColor = 'green';
@@ -133,9 +135,10 @@ document.addEventListener('DOMContentLoaded', function () {
             playAgain.style.display = 'block';
         }
     }
+
     playAgain.addEventListener('click', () => {
         location.reload();
-    })
+    });
 
     fetchCategories();
 });
