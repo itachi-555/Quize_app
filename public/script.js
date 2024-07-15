@@ -13,19 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let correctAnswerButton;
 
     function fetchCategories() {
-        fetch('https://opentdb.com/api_category.php')
+        fetch('/categories')
             .then(response => response.json())
             .then(data => {
-                // data.categories is an array of category objects
-                data.trivia_categories.forEach(category => {
+                data.forEach((category, index) => {
                     // Create an <option> element for each category
                     let option = document.createElement('option');
-                    option.value = category.id;
-                    option.textContent = category.name;
+                    option.value = index;
+                    option.textContent = category;
                     types.appendChild(option);
                 });
-
-                // Retrieve and set the selected type after options are populated
+                //Retrieve and set the selected type after options are populated
                 const savedType = localStorage.getItem('type');
                 if (savedType) {
                     types.value = savedType;
@@ -53,17 +51,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if types.options[types.selectedIndex] is defined
         if (types.selectedIndex !== -1) {
             type.innerText = types.options[types.selectedIndex].textContent;
-            fetch(`https://opentdb.com/api.php?amount=${amount}&category=${types.value}&difficulty=easy&type=multiple`)
+            fetch(`/quizzes/${types.value}`)
                 .then(response => response.json())
                 .then(data => {
                     Quizes = []; // Clear Quizes array before fetching new data
-                    data.results.forEach((question, index) => {
-                        let answers = [...question.incorrect_answers, question.correct_answer]; // Combine incorrect and correct answers
-                        answers = shuffle(answers);
+                    data.forEach((quiz, index) => {
+                        
+                        const answers = shuffle(quiz.Answers);
                         let Quiz = {
-                            Question: question.question,
+                            Question: quiz.Question,
                             Answers: answers,
-                            correctAnswer: question.correct_answer
+                            correctAnswer: quiz.correctAnswer
                         };
 
                         Quizes.push(Quiz); // Push each quiz object into the Quizes array
