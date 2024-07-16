@@ -68,29 +68,39 @@ const Quizzes = [
         categorie: "Les Dynasties",
         quizzes: [
             {
-                Question: "En quelle année la dynastie Idrisside a-t-elle fondé le premier état marocain?",
-                correctAnswer: "789",
-                Answers: ["789", "1060", "1145", "1244"]
+                Question: "Quelle dynastie a fondé le premier état marocain en 789?",
+                correctAnswer: "Dynastie Idrisside",
+                Answers: ["Dynastie Idrisside", "Dynastie Almoravide", "Dynastie Saadienne", "Dynastie Alaouite"]
             },
             {
-                Question: "Quelle dynastie a fondé un émirat à Tinmel vers 1120?",
-                correctAnswer: "Dynastie Almohade",
-                Answers: ["Dynastie Almohade", "Dynastie Mérinide", "Dynastie Wattasside", "Dynastie Saadienne"]
+                Question: "De quelle origine ethnique est issue la dynastie Almoravide?",
+                correctAnswer: "Berbères Sanhajas",
+                Answers: ["Berbères Sanhajas", "Berbères Masmoudas", "Berbères Zenatas", "Berbères Rifains"]
             },
             {
-                Question: "Quelle dynastie est issue des Berbères Zenatas?",
+                Question: "Quel émirat a été fondé par les Almohades vers 1120?",
+                correctAnswer: "Tinmel",
+                Answers: ["Tinmel", "Fès", "Marrakech", "Rabat"]
+            },
+            {
+                Question: "Quelle dynastie a éliminé définitivement les Almohades en 1269?",
                 correctAnswer: "Dynastie Mérinide",
-                Answers: ["Dynastie Mérinide", "Dynastie Almohade", "Dynastie Wattasside", "Dynastie Saadienne"]
+                Answers: ["Dynastie Mérinide", "Dynastie Saadienne", "Dynastie Alaouite", "Dynastie Wattasside"]
             },
             {
-                Question: "Quelle dynastie a renversé les Almohades en 1554?",
+                Question: "Quelle dynastie est considérée comme une branche des Mérinides?",
+                correctAnswer: "Dynastie Wattasside",
+                Answers: ["Dynastie Wattasside", "Dynastie Idrisside", "Dynastie Saadienne", "Dynastie Almoravide"]
+            },
+            {
+                Question: "Quelle dynastie a reçu le soutien des tribus du Souss en 1511?",
                 correctAnswer: "Dynastie Saadienne",
-                Answers: ["Dynastie Saadienne", "Dynastie Wattasside", "Dynastie Mérinide", "Dynastie Alaouite"]
+                Answers: ["Dynastie Saadienne", "Dynastie Alaouite", "Dynastie Mérinide", "Dynastie Almohade"]
             },
             {
-                Question: "Quelle dynastie est au pouvoir au Maroc depuis 1666?",
-                correctAnswer: "Dynastie Alaouite",
-                Answers: ["Dynastie Alaouite", "Dynastie Mérinide", "Dynastie Saadienne", "Dynastie Wattasside"]
+                Question: "Qui a lancé une campagne pour la réunification du Maroc en 1666?",
+                correctAnswer: "Moulay Rachid",
+                Answers: ["Moulay Rachid", "Ahmed al-Mansur", "Idris I", "Yusuf ibn Tashfin"]
             }
         ]
     },
@@ -98,24 +108,54 @@ const Quizzes = [
         categorie: "Les Rois de la dynastie Alaouite",
         quizzes: [
             {
-                Question: "Qui était le roi de la dynastie Alaouite de 1961 à 1999?",
+                Question: "Qui était le roi de la dynastie Alaouite en 1666-1672?",
+                correctAnswer: "Moulay Rachid",
+                Answers: ["Moulay Rachid", "Moulay Ismail", "Moulay Ahmed", "Moulay Abdallah II"]
+            },
+            {
+                Question: "Quel roi a régné de 1790 à 1792?",
+                correctAnswer: "Moulay Yazid",
+                Answers: ["Moulay Yazid", "Moulay Slimane", "Moulay Abderrahmane", "Moulay Abdallah II"]
+            },
+            {
+                Question: "Qui était le roi de la dynastie Alaouite en 1927-1961?",
+                correctAnswer: "Mohammed V",
+                Answers: ["Mohammed V", "Hassan II", "Mohammed VI", "Moulay Youssef"]
+            },
+            {
+                Question: "Qui a régné après Mohammed V?",
                 correctAnswer: "Hassan II",
-                Answers: ["Hassan II", "Mohammed V", "Mohammed VI", "Moulay Ismail"]
+                Answers: ["Hassan II", "Mohammed IV", "Hassan I", "Moulay Slimane"]
             },
             {
-                Question: "Quel roi a régné de 1792 à 1822?",
-                correctAnswer: "Moulay Slimane",
-                Answers: ["Moulay Slimane", "Moulay Yazid", "Moulay Abderrahmane", "Mohammed III du Maroc"]
-            },
-            {
-                Question: "Qui est le roi actuel du Maroc?",
+                Question: "Qui est le roi actuel de la dynastie Alaouite?",
                 correctAnswer: "Mohammed VI",
-                Answers: ["Mohammed VI", "Hassan II", "Moulay Hassan", "Moulay Rachid"]
+                Answers: ["Mohammed VI", "Hassan II", "Moulay Youssef", "Moulay Abderrahmane"]
             },
             {
-                Question: "Quel roi a régné après Moulay Ismail?",
-                correctAnswer: "Moulay Ahmed",
-                Answers: ["Moulay Ahmed", "Moulay Rachid", "Moulay Ali", "Moulay Abdallah"]
+                Question: "Quel roi a régné de 1859 à 1873?",
+                correctAnswer: "Mohammed IV",
+                Answers: ["Mohammed IV", "Hassan I", "Moulay Slimane", "Moulay Abderrahmane"]
+            },
+            {
+                Question: "Qui était le roi de la dynastie Alaouite en 1908-1912?",
+                correctAnswer: "Moulay Abdelhafid",
+                Answers: ["Moulay Abdelhafid", "Moulay Abdelaziz", "Moulay Youssef", "Moulay Abderrahmane"]
+            },
+            {
+                Question: "Quel roi a régné de 1672 à 1727?",
+                correctAnswer: "Moulay Ismail",
+                Answers: ["Moulay Ismail", "Moulay Rachid", "Moulay Ahmed", "Moulay Abdallah II"]
+            },
+            {
+                Question: "Qui était le prince héritier de la dynastie Alaouite?",
+                correctAnswer: "Moulay Hassan",
+                Answers: ["Moulay Hassan", "Moulay Yazid", "Moulay Slimane", "Moulay Abderrahmane"]
+            },
+            {
+                Question: "Qui a régné de 1757 à 1790?",
+                correctAnswer: "Mohammed III du Maroc",
+                Answers: ["Mohammed III du Maroc", "Moulay Mostadi", "Moulay Abdallah", "Mohammed II"]
             }
         ]
     },
@@ -123,24 +163,54 @@ const Quizzes = [
         categorie: "Les grandes batailles de l’histoire du Maroc",
         quizzes: [
             {
-                Question: "Qui a remporté la victoire décisive à la bataille de Zalaca en 1086?",
-                correctAnswer: "Yousel bin Tachfine",
-                Answers: ["Yousel bin Tachfine", "Yacoub Al-Mansour", "Abou Marwane Abdelmalik", "Sébastien Ier"]
+                Question: "Quelle bataille a eu lieu en 1086 et a vu la victoire du prince almoravide Yousel bin Tachfine?",
+                correctAnswer: "Bataille de Zalaca",
+                Answers: ["Bataille de Zalaca", "Bataille d'Alarcos", "Bataille des Trois Rois", "Bataille d'Isly"]
             },
             {
-                Question: "En quelle année a eu lieu la bataille d'Isly?",
-                correctAnswer: "1844",
-                Answers: ["1844", "1921", "1860", "1578"]
+                Question: "Quelle bataille est également connue sous le nom de désastre d'Alarcos?",
+                correctAnswer: "Bataille d'Alarcos",
+                Answers: ["Bataille d'Alarcos", "Bataille des Trois Rois", "Bataille de Zalaca", "Bataille d'Anoual"]
             },
             {
-                Question: "Quelle bataille a mis fin au projet d'invasion du Maroc par le roi de Portugal Sebastian 1er?",
-                correctAnswer: "La bataille des Trois Rois",
-                Answers: ["La bataille des Trois Rois", "La bataille d'Isly", "La bataille d'Anoual", "La bataille de Zalaca"]
+                Question: "Quelle bataille décisive a mis fin au projet d'invasion du Maroc par le roi de Portugal Sebastian 1er?",
+                correctAnswer: "Bataille des Trois Rois",
+                Answers: ["Bataille des Trois Rois", "Bataille d'Isly", "Bataille de Tétouan", "Bataille de Zalaca"]
             },
             {
-                Question: "Qui a été le chef de l'armée rifaine à la bataille d'Anoual en 1921?",
-                correctAnswer: "Mohammed Abdelkrim el Khattabi",
-                Answers: ["Mohammed Abdelkrim el Khattabi", "Sidi Mohammed ben Abderrahmane", "Yacoub Al-Mansour", "Yousel bin Tachfine"]
+                Question: "Quelle bataille a opposé les forces coloniales françaises à l'armée du prince Sidi Mohammed ben Abderrahmane en 1844?",
+                correctAnswer: "Bataille d'Isly",
+                Answers: ["Bataille d'Isly", "Bataille des Trois Rois", "Bataille d'Anoual", "Bataille de Zalaca"]
+            },
+            {
+                Question: "Quelle guerre coloniale menée par l'Espagne contre le Maroc a eu lieu entre 1859 et 1860?",
+                correctAnswer: "Guerre de Tétouan",
+                Answers: ["Guerre de Tétouan", "Bataille des Trois Rois", "Bataille d'Isly", "Bataille d'Alarcos"]
+            },
+            {
+                Question: "Quelle bataille en 1921 est connue comme le désastre d'Anoual par l'historiographie espagnole?",
+                correctAnswer: "Bataille d’Anoual",
+                Answers: ["Bataille d’Anoual", "Bataille des Trois Rois", "Bataille de Tétouan", "Bataille de Zalaca"]
+            },
+            {
+                Question: "Quel roi de Castille a été presque fait prisonnier à la bataille de Zalaca?",
+                correctAnswer: "Alphonse VI",
+                Answers: ["Alphonse VI", "Alphonse VIII", "Sébastien Ier", "Abdelkader"]
+            },
+            {
+                Question: "Quel calife almohade a mené ses troupes à la victoire à la bataille d'Alarcos?",
+                correctAnswer: "Yacoub Al-Mansour",
+                Answers: ["Yacoub Al-Mansour", "Yousel bin Tachfine", "Sidi Mohammed ben Abderrahmane", "Mohammed Abdelkrim el Khattabi"]
+            },
+            {
+                Question: "Qui était le chef de la rébellion soutenue par le prince Sidi Mohammed ben Abderrahmane à la bataille d'Isly?",
+                correctAnswer: "Émir Abdelkader",
+                Answers: ["Émir Abdelkader", "Mohammed Abdelkrim el Khattabi", "Yacoub Al-Mansour", "Alphonse VI"]
+            },
+            {
+                Question: "Quel traité a été signé après la défaite de Tétouan en 1860?",
+                correctAnswer: "Traité de Wad-Ras",
+                Answers: ["Traité de Wad-Ras", "Traité de Fès", "Traité de Tordesillas", "Traité de Versailles"]
             }
         ]
     },
@@ -148,29 +218,54 @@ const Quizzes = [
         categorie: "Les Monuments Historiques marocains",
         quizzes: [
             {
-                Question: "Quel monument a été commencé à Cordoue en 1137?",
+                Question: "Quel monument a été commandé par le sultan Ali Ben Youssef et achevé à Cordoue en 1137?",
                 correctAnswer: "Le Minbar de la Koutoubia",
                 Answers: ["Le Minbar de la Koutoubia", "Les Remparts de Marrakech", "Les Tombeaux Saadiens", "Le Palais de la Bahia"]
             },
             {
-                Question: "Qui a ordonné la construction des remparts de Marrakech au XIIe siècle?",
-                correctAnswer: "Ali Ben Youssef",
-                Answers: ["Ali Ben Youssef", "Ahmed al-Mansur Saadi", "Si Ahmed ben Musa", "Moulay el Hassan Ier"]
+                Question: "Quand les remparts de Marrakech ont-ils été construits?",
+                correctAnswer: "Au XIIe siècle",
+                Answers: ["Au XIIe siècle", "Au XIXe siècle", "Au XVIe siècle", "Au XVIIIe siècle"]
             },
             {
-                Question: "À quelle période ont été bâtis les Tombeaux Saadiens?",
-                correctAnswer: "Fin du XVIe siècle",
-                Answers: ["Fin du XVIe siècle", "XIXe siècle", "XIIe siècle", "Avant notre ère"]
+                Question: "Qui a fait construire les Tombeaux Saadiens à la fin du XVIe siècle?",
+                correctAnswer: "Sultan Ahmed al-Mansur Saadi",
+                Answers: ["Sultan Ahmed al-Mansur Saadi", "Sultan Ali Ben Youssef", "Sultan Mohammed V", "Sultan Moulay Ismaïl"]
             },
             {
-                Question: "Quelle est la place la plus célèbre du Maghreb?",
-                correctAnswer: "Place Jemaa El Fnaa",
-                Answers: ["Place Jemaa El Fnaa", "Volubilis", "Kasbah des Oudayas", "Tour Hassan"]
+                Question: "À qui appartenait le Palais de la Bahia, édifié au XIXe siècle?",
+                correctAnswer: "Si Ahmed ben Musa",
+                Answers: ["Si Ahmed ben Musa", "Sultan Ahmed al-Mansur Dhahbî", "Sultan Mohammed VI", "Sultan Hassan II"]
             },
             {
-                Question: "Quel monument est un vaste jardin planté d'oliviers aménagé sous la dynastie des Almohades?",
-                correctAnswer: "Menara",
-                Answers: ["Menara", "Tour Hassan", "Palais El Badi", "Mosquée Hassan II"]
+                Question: "Quel est le nom de la place la plus célèbre du Maghreb, située à Marrakech?",
+                correctAnswer: "Place Jemaa el Fna",
+                Answers: ["Place Jemaa el Fna", "Place Mohammed V", "Place de la Liberté", "Place Royale"]
+            },
+            {
+                Question: "Quelle ville marocaine abrite les Grottes d'Hercule?",
+                correctAnswer: "Tanger",
+                Answers: ["Tanger", "Marrakech", "Casablanca", "Rabat"]
+            },
+            {
+                Question: "Où se trouve la Mosquée Hassan II, construite en partie sur la mer?",
+                correctAnswer: "Casablanca",
+                Answers: ["Casablanca", "Marrakech", "Rabat", "Tanger"]
+            },
+            {
+                Question: "Quelle ville abrite la Tour Hassan, constituant le minaret d'une mosquée inachevée du XIIe siècle?",
+                correctAnswer: "Rabat",
+                Answers: ["Rabat", "Marrakech", "Casablanca", "Tanger"]
+            },
+            {
+                Question: "Pourquoi le Palais El Badi a-t-il été édifié par le sultan saadien Ahmed al-Mansur Dhahbî?",
+                correctAnswer: "Pour célébrer la victoire sur l'armée portugaise en 1578",
+                Answers: ["Pour célébrer la victoire sur l'armée portugaise en 1578", "Pour résidence royale", "Pour la défense de Marrakech", "Pour les cérémonies religieuses"]
+            },
+            {
+                Question: "Quand la Kasbah des Oudayas a-t-elle été inscrite sur la liste du patrimoine mondial de l'Unesco?",
+                correctAnswer: "Depuis 2012",
+                Answers: ["Depuis 2012", "Depuis 1990", "Depuis 2005", "Depuis 1985"]
             }
         ]
     },
@@ -178,24 +273,214 @@ const Quizzes = [
         categorie: "Les 7 Merveilles du Monde",
         quizzes: [
             {
-                Question: "Quelle merveille antique se trouve à Gizeh en Égypte?",
-                correctAnswer: "La pyramide de Khéops",
-                Answers: ["La pyramide de Khéops", "Les jardins suspendus de Babylone", "Le phare d'Alexandrie", "Le colosse de Rhodes"]
+                Question: "Où se trouve la pyramide de Khéops, l'une des Sept Merveilles du Monde Antique?",
+                correctAnswer: "Égypte",
+                Answers: ["Égypte", "Irak", "Grèce", "Turquie"]
             },
             {
-                Question: "Quel monument moderne est situé en Inde?",
-                correctAnswer: "Le Taj Mahal",
-                Answers: ["Le Taj Mahal", "La Grande muraille de Chine", "Le Colisée", "Machu Picchu"]
+                Question: "Quelle merveille antique était située à Babylone, l'Irak actuel?",
+                correctAnswer: "Les jardins suspendus",
+                Answers: ["Les jardins suspendus", "La statue de Zeus à Olympie", "Le temple d'Artémis à Éphèse", "Le tombeau de Mausole à Halicarnasse"]
             },
             {
-                Question: "Où se trouvent les jardins suspendus de Babylone?",
-                correctAnswer: "En Irak",
-                Answers: ["En Irak", "En Turquie", "En Égypte", "En Jordanie"]
+                Question: "Quelle merveille antique était une statue chryséléphantine située à Olympie?",
+                correctAnswer: "La statue de Zeus",
+                Answers: ["La statue de Zeus", "La pyramide de Khéops", "Le colosse de Rhodes", "Le phare d'Alexandrie"]
             },
             {
-                Question: "Quel site archéologique moderne est situé au Mexique?",
+                Question: "Quelle merveille antique était dédiée à la déesse Artémis et se trouvait à Éphèse?",
+                correctAnswer: "Le temple d'Artémis",
+                Answers: ["Le temple d'Artémis", "Les jardins suspendus", "La statue de Zeus à Olympie", "Le tombeau de Mausole à Halicarnasse"]
+            },
+            {
+                Question: "Où était situé le tombeau de Mausole, une des Sept Merveilles du Monde Antique?",
+                correctAnswer: "À Halicarnasse, en Turquie",
+                Answers: ["À Halicarnasse, en Turquie", "À Gizeh, en Égypte", "À Athènes, en Grèce", "À Rome, en Italie"]
+            },
+            {
+                Question: "Quelle merveille antique était une grande statue située à Rhodes?",
+                correctAnswer: "Le colosse de Rhodes",
+                Answers: ["Le colosse de Rhodes", "Le phare d'Alexandrie", "Le temple d'Artémis à Éphèse", "La pyramide de Khéops"]
+            },
+            {
+                Question: "Où se trouvait le phare d'Alexandrie, l'une des Sept Merveilles du Monde Antique?",
+                correctAnswer: "Égypte",
+                Answers: ["Égypte", "Grèce", "Turquie", "Syrie"]
+            },
+            {
+                Question: "Quel monument moderne est situé au Pérou et est considéré comme l'une des Sept Merveilles du Monde Moderne?",
+                correctAnswer: "Machu Picchu",
+                Answers: ["Machu Picchu", "Taj Mahal", "Grande muraille de Chine", "Christ rédempteur à Rio de Janeiro"]
+            },
+            {
+                Question: "Quelle merveille moderne est un site archéologique situé au Mexique?",
                 correctAnswer: "Chichén Itzá",
-                Answers: ["Chichén Itzá", "Pétra", "Machu Picchu", "La statue du Christ rédempteur"]
+                Answers: ["Chichén Itzá", "Colisée à Rome", "Taj Mahal", "Grande muraille de Chine"]
+            },
+            {
+                Question: "Quel monument moderne est une grande structure située au Brésil?",
+                correctAnswer: "La statue du Christ rédempteur",
+                Answers: ["La statue du Christ rédempteur", "Machu Picchu", "Chichén Itzá", "Colisée à Rome"]
+            }
+        ]
+    },
+    {
+        categorie: "Abréviations des Partis politique marocain",
+        quizzes: [
+            {
+                Question: "Qu'est-ce que représente l'abréviation 'ADL' dans le contexte politique marocain?",
+                correctAnswer: "Parti d'Alliance des Libertés",
+                Answers: ["Parti d'Alliance des Libertés", "Armée Marocaine de Libération", "Conseil Consultatif des Droits de l'Homme", "Parti des Forces Citoyennes"]
+            },
+            {
+                Question: "À quoi correspond l'abréviation 'AML' dans le contexte marocain?",
+                correctAnswer: "Armée Marocaine de Libération",
+                Answers: ["Armée Marocaine de Libération", "Parti d'Alliance des Libertés", "Front National Marocain", "Parti des Initiatives Citoyennes pour le Développement"]
+            },
+            {
+                Question: "Que signifie 'CCDH' dans le cadre politique marocain?",
+                correctAnswer: "Conseil Consultatif des Droits de l'Homme",
+                Answers: ["Conseil Consultatif des Droits de l'Homme", "Parti des Forces Citoyennes", "Front des Forces Démocratiques", "Mouvement Démocrate Social"]
+            },
+            {
+                Question: "Quel parti politique marocain est abrégé par 'FC'?",
+                correctAnswer: "Parti des Forces Citoyennes",
+                Answers: ["Parti des Forces Citoyennes", "Front de Défense des Institutions Constitutionnelles", "Front des Forces Démocratiques", "Front National Marocain"]
+            },
+            {
+                Question: "Que représente 'FDIC' dans le contexte politique du Maroc?",
+                correctAnswer: "Front de Défense des Institutions Constitutionnelles",
+                Answers: ["Front de Défense des Institutions Constitutionnelles", "Front des Forces Démocratiques", "Mouvement Démocrate Social", "Parti des Initiatives Citoyennes pour le Développement"]
+            },
+            {
+                Question: "À quoi correspond 'FFD' dans le contexte des partis politiques marocains?",
+                correctAnswer: "Front des Forces Démocratiques",
+                Answers: ["Front des Forces Démocratiques", "Front National Marocain", "Mouvement pour la Démocratie", "Parti de l'Avant-garde Démocratique et Sociale"]
+            },
+            {
+                Question: "Quel est le sens de 'FNM' dans le paysage politique marocain?",
+                correctAnswer: "Front National Marocain",
+                Answers: ["Front National Marocain", "Mouvement Populaire Démocratique Constitutionnel", "Mouvement pour la Démocratie", "Organisation d'Action Démocratique et Populaire"]
+            },
+            {
+                Question: "Que représente l'abréviation 'ICD' parmi les partis politiques marocains?",
+                correctAnswer: "Parti des Initiatives Citoyennes pour le Développement",
+                Answers: ["Parti des Initiatives Citoyennes pour le Développement", "Parti de l'Action", "Parti Démocratique de l'Indépendance", "Parti de l'Avant-garde Démocratique et Sociale"]
+            },
+            {
+                Question: "Quel parti est représenté par 'MDS' dans le contexte politique du Maroc?",
+                correctAnswer: "Mouvement Démocrate Social",
+                Answers: ["Mouvement Démocrate Social", "Mouvement de la Jeunesse Islamique Marocaine", "Mouvement National Populaire", "Mouvement Populaire Démocratique Constitutionnel"]
+            },
+            {
+                Question: "À quoi correspond l'abréviation 'MJIM' dans le contexte des partis politiques marocains?",
+                correctAnswer: "Mouvement de la Jeunesse Islamique Marocaine",
+                Answers: ["Mouvement de la Jeunesse Islamique Marocaine", "Mouvement National Populaire", "Mouvement Populaire Démocratique Constitutionnel", "Mouvement pour la Démocratie"]
+            },
+            {
+                Question: "Qu'est-ce que représente l'abréviation 'PI' dans le contexte politique marocain?",
+                correctAnswer: "Parti de l'Istiqlal",
+                Answers: ["Parti de l'Istiqlal", "Parti de la Justice et du Développement", "Parti Libéral Réformateur", "Parti Marocain Libéral"]
+            },
+            {
+                Question: "À quoi correspond 'PJD' dans le contexte des partis politiques marocains?",
+                correctAnswer: "Parti de la Justice et du Développement",
+                Answers: ["Parti de la Justice et du Développement", "Patti des Libéraux Indépendants", "Parti National Démocratique", "Parti du Peuple Marocain"]
+            },
+            {
+                Question: "Que signifie 'PU' parmi les partis politiques marocains?",
+                correctAnswer: "Parti des Libéraux Indépendants",
+                Answers: ["Parti des Libéraux Indépendants", "Parti Libéral et Progressiste", "Parti de Libération et du Socialisme", "Parti du Progrès et du Socialisme"]
+            },
+            {
+                Question: "Quel parti politique marocain est abrégé par 'PLP'?",
+                correctAnswer: "Parti Libéral et Progressiste",
+                Answers: ["Parti Libéral et Progressiste", "Parti Libéral Réformateur", "Parti Marocain Libéral", "Parti d'Unité Marocaine"]
+            },
+            {
+                Question: "Que représente 'PLR' dans le cadre politique du Maroc?",
+                correctAnswer: "Parti Libéral Réformateur",
+                Answers: ["Parti Libéral Réformateur", "Parti de Libération et du Socialisme", "Parti National des Réformes", "Parti du Renouveau et de l'Equité"]
+            },
+            {
+                Question: "À quoi correspond l'abréviation 'PLS' parmi les partis politiques marocains?",
+                correctAnswer: "Parti de Libération et du Socialisme",
+                Answers: ["Parti de Libération et du Socialisme", "Parti Marocain Libéral", "Parti d'Unité Marocaine", "Parti Socialiste Démocrate"]
+            },
+            {
+                Question: "Quel est le sens de 'PML' dans le contexte des partis politiques marocains?",
+                correctAnswer: "Parti Marocain Libéral",
+                Answers: ["Parti Marocain Libéral", "Parti National Démocratique", "Parti du Peuple Marocain", "Parti d'Unité Marocaine"]
+            },
+            {
+                Question: "Que représente l'abréviation 'PND' dans le paysage politique marocain?",
+                correctAnswer: "Parti National Démocratique",
+                Answers: ["Parti National Démocratique", "Parti National Génération Indépendance", "Parti National des Réformes", "Parti du Peuple Marocain"]
+            },
+            {
+                Question: "À quoi correspond 'PNGI' dans le contexte des partis politiques marocains?",
+                correctAnswer: "Parti National Génération Indépendance",
+                Answers: ["Parti National Génération Indépendance", "Parti National des Réformes", "Parti du Peuple Marocain", "Parti d'Unité Marocaine"]
+            },
+            {
+                Question: "Quel parti politique marocain est abrégé par 'PNR'?",
+                correctAnswer: "Parti National des Réformes",
+                Answers: ["Parti National des Réformes", "Parti du Peuple Marocain", "Parti d'Unité Marocaine", "Parti du Renouveau et de l'Equité"]
+            }
+        ]
+    },
+    {
+        categorie: "Le parlement du Maroc",
+        quizzes: [
+            {
+                Question: "Quel est le nom de la chambre basse du parlement marocain ?",
+                correctAnswer: "La chambre des représentants",
+                Answers: [
+                    "La chambre des représentants",
+                    "La chambre des conseillers",
+                    "La chambre haute",
+                    "La chambre législative"
+                ]
+            },
+            {
+                Question: "Combien de membres composent la chambre des représentants du parlement marocain ?",
+                correctAnswer: "395",
+                Answers: [
+                    "395",
+                    "120",
+                    "200",
+                    "500"
+                ]
+            },
+            {
+                Question: "Qui est l'actuel président de la chambre des représentants du parlement marocain ?",
+                correctAnswer: "Rachid Talbi Alami",
+                Answers: [
+                    "Rachid Talbi Alami",
+                    "Naam Myara",
+                    "Mohammed VI",
+                    "Abdelilah Benkirane"
+                ]
+            },
+            {
+                Question: "Combien de membres composent la chambre des conseillers du parlement marocain ?",
+                correctAnswer: "120",
+                Answers: [
+                    "120",
+                    "395",
+                    "200",
+                    "500"
+                ]
+            },
+            {
+                Question: "Qui est l'actuel président de la chambre des conseillers du parlement marocain ?",
+                correctAnswer: "Naam Myara",
+                Answers: [
+                    "Naam Myara",
+                    "Rachid Talbi Alami",
+                    "Mohammed VI",
+                    "Abdelilah Benkirane"
+                ]
             }
         ]
     },

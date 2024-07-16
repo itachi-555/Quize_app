@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         Quizes.push(Quiz); // Push each quiz object into the Quizes array
                     });
+                    Quizes = shuffle(Quizes);
                     counter = 0; // Reset counter when fetching new quiz data
                     displayQuiz(); // Display the first quiz question and answers
                 })
